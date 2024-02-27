@@ -26,12 +26,10 @@
 #define RelayPin1 5  //D1
 #define RelayPin2 4  //D2
 #define RelayPin3 14 //D5
-#define RelayPin4 12 //D6
 
 #define SwitchPin1 10  //SD3
 #define SwitchPin2 0   //D3 
 #define SwitchPin3 13  //D7
-#define SwitchPin4 3   //RX
 
 #define wifiLed   16   //D0
 
@@ -50,8 +48,7 @@ std::map<String, deviceConfig_t> devices = {
     //{deviceId, {relayPIN,  flipSwitchPIN}}
     {device_ID_1, {  RelayPin1, SwitchPin1 }},
     {device_ID_2, {  RelayPin2, SwitchPin2 }},
-    {device_ID_3, {  RelayPin3, SwitchPin3 }},
-    {device_ID_4, {  RelayPin4, SwitchPin4 }}     
+    {device_ID_3, {  RelayPin3, SwitchPin3 }},   
 };
 
 typedef struct {      // struct for the std::map below
